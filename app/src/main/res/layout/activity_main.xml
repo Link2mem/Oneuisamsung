@@ -4,8 +4,8 @@
     android:id="@+id/drawer_layout_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    app:title="@string/app_name"
-    >
+    app:title="Eternity Alarm"
+    app:expanded="true">
 
     <FrameLayout
         android:id="@+id/fragment_container"
@@ -17,7 +17,9 @@
         android:id="@+id/main_tabs"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_location="footer" />
+        app:layout_location="footer"
+        app:tabIndicatorFullWidth="false"
+        app:tabMode="fixed" />
 
     <include layout="@layout/content_drawer" />
 
