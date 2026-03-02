@@ -6,8 +6,8 @@
     android:layout_height="match_parent"
     app:expanded="false"
     app:navigationIcon="@drawable/ic_oui_back"
-    app:subtitle="@string/app_name"
-    app:title="@string/app_picker">
+    app:subtitle="Eternity Alarm"
+    app:title="اختيار رنين المنبه">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -18,13 +18,28 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingHorizontal="16dp"
-            android:paddingVertical="4dp"
+            android:paddingVertical="12dp"
             android:background="@color/oui_background_color">
 
-            <androidx.appcompat.widget.AppCompatSpinner
-                android:id="@+id/apppicker_spinner"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="قائمة النغمات"
+                    android:textSize="16sp"
+                    android:fontFamily="sans-serif-medium" />
+
+                <androidx.appcompat.widget.AppCompatSpinner
+                    android:id="@+id/apppicker_spinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
 
         </dev.oneuiproject.oneui.widget.RoundFrameLayout>
 
@@ -55,5 +70,3 @@
     </LinearLayout>
 
 </dev.oneuiproject.oneui.layout.ToolbarLayout>
-
-
